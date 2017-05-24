@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1296db</color>
+    <color name="colorPrimaryDark">#1296db</color>
+    <color name="colorAccent">#1296db</color>
+    <color name="colorTheme">#1296db</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgrey">#6C6C6C</color>
+    <color name="grey">#ACACAC</color>
+    <color name="lightgrey">#ECECEC</color>
+    <color name="lightlightgrey">#F1F1F1</color>
+    <color name="blue">#0074A6</color>
+
+
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="gary">#898989</color>
+
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <!--水波纹点击效果-->
+    <color name="colorHomeLine">#D4D4D4</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+</resources>

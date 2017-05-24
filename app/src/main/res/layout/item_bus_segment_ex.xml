@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginStart="15.5dp" >
+
+        <ImageView
+            android:id="@+id/bus_dir_icon"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dir_station" />
+
+        <ImageView
+            android:id="@+id/bus_dir_icon_up"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bus_dir_icon"
+            android:layout_centerHorizontal="true"
+            android:background="#b6b6b6" />
+
+        <ImageView
+            android:id="@+id/bus_dir_icon_down"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bus_dir_icon"
+            android:layout_centerHorizontal="true"
+            android:background="#b6b6b6" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bus_line_station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+</LinearLayout>

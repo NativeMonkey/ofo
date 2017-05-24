@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="输入手机号码"
+            android:textColorHint="@color/colorTabText"
+            android:inputType="number"
+            android:maxLength="11"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="输入验证码"
+                android:textColorHint="@color/colorTabText"
+                android:inputType="number"
+                android:maxLength="6"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:background="@color/colorTheme"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="立即登陆"
+            android:textColor="@color/white"
+            android:background="@color/colorTheme"/>
+
+
+
+    </LinearLayout>
+</layout>

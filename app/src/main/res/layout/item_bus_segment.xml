@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/bus_seg_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:background="#e0e0e0"/>
+
+    <RelativeLayout
+        android:id="@+id/bus_route_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" >
+
+        <ImageView
+            android:id="@+id/bus_dir_icon"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dir_start" />
+
+        <ImageView
+            android:id="@+id/bus_dir_icon_up"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bus_dir_icon"
+            android:layout_centerHorizontal="true"
+            android:background="#b6b6b6"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/bus_dir_icon_down"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bus_dir_icon"
+            android:layout_centerHorizontal="true"
+            android:background="#b6b6b6" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bus_item"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+        <RelativeLayout
+            android:id="@+id/stationinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/bus_expand_image"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/down"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bus_station_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bus_expand_image"
+                android:layout_toStartOf="@id/bus_expand_image"
+                android:gravity="center_vertical"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/bus_line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="70dp"
+             android:layout_marginEnd="70dp"
+            android:textColor="#333333"
+            android:text="出发"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/expand_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_item"
+        android:orientation="vertical">
+    </LinearLayout>
+</RelativeLayout>

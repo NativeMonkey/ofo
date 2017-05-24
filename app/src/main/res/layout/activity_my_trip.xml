@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_trip_info">
+
+        </com.amap.api.maps.MapView>
+        <LinearLayout
+            android:id="@+id/ll_trip_info"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/colorPageBg"
+            android:layout_alignParentBottom="true">
+
+        </LinearLayout>
+        <com.carryondown.app.view.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="163.5dp"
+            android:src="@drawable/avatar_default_login"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+</layout>

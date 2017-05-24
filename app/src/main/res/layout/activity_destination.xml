@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightlightgrey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorTheme" >
+
+        <ImageView
+            android:id="@+id/destination_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back"
+            />
+
+        <com.carryondown.app.view.ClearEditText
+            android:id="@+id/destination_edittext"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:padding="10dp"
+            android:hint="输入寻车地点"
+            android:textCursorDrawable="@null"
+            android:layout_weight="1">
+        </com.carryondown.app.view.ClearEditText>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/recommend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
